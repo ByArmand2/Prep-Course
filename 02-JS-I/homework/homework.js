@@ -249,7 +249,7 @@ function esVocal(letra){
     if(letra=='a'||'e'||'i'||'o'||'u'){
     return 'Es vocal';
     }
-    else if(letra!='a'&&'e'&&'i'&&'o'&&'u'){
+    if(letra!='a'&&'e'&&'i'&&'o'&&'u'){
       return 'Dato incorrecto';
     }
   }
