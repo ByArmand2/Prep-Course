@@ -249,9 +249,9 @@ function esVocal(letra){
     if(letra=='a'||'e'||'i'||'o'||'u'){
     return 'Es vocal';
     }
-  }
-  else if(letra!='a'||'e'||'i'||'o'||'u'){
-    return 'Dato incorrecto';
+    else if(letra!='a'&&'e'&&'i'&&'o'&&'u'){
+      return 'Dato incorrecto';
+    }
   }
   else if(longitud>1){
     return 'Dato incorrecto';
