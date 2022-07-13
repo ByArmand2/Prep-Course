@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = 'Adios';
+const nuevaString = 'Hola';
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 10;
@@ -86,7 +86,7 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num>90){
+  if(num<90){
     return true;
   }
   return false;
@@ -165,7 +165,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.floor(num);
+  return Math.random(num);
 }
 
 function esPositivo(numero) {
@@ -174,10 +174,10 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if(numero>0){
-    console.log('Es positivo')
+    return "Es positivo";
   }
   if(numero<0){
-    console.log('Es negativo')
+    return "Es negativo"
   }
   if(numero==0){
     return false;
@@ -188,7 +188,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  console.log(str+'!');
+  return str+'!';
 }
 
 function combinarNombres(nombre, apellido) {
@@ -216,7 +216,7 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  var perimetro=4*lado;
+  var perimetro=lado*lado;
   return lado;
 }
 
@@ -247,14 +247,14 @@ function esVocal(letra){
   var longitud=letra.length;
   if(longitud==1){
     if(letra=='a'||'e'||'i'||'o'||'u'){
-      console.log('Es una vocal')
+    return 'Es una vocal';
     }
     else{
-      console.log('Dato incorrecto')
+      return 'Dato incorrecto';
     }
   }
   else if(longitud>1){
-    console.log('Dato incorrecto')
+    return 'Dato incorrecto';
   }
 }
 
