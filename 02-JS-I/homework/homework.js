@@ -246,9 +246,11 @@ function esVocal(letra){
   //Escribe tu código aquí
   var longitud=letra.length;
   if(longitud==1){
-    if(letra=='a'||'e'||'i'||'o'||'u'){
-    return 'Es vocal';
-    }
+    if(letra=='a'){ return 'Es vocal';}
+    if(letra=='e'){return 'Es vocal';}
+    if(letra=='i'){return 'Es vocal';}
+    if(letra=='o'){return 'Es vocal';}
+    if(letra=='u'){return 'Es vocal';}
   else{
     return 'Dato incorrecto';
   }
