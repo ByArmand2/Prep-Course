@@ -165,7 +165,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random(num);
+  return Math.random();
 }
 
 function esPositivo(numero) {
@@ -195,7 +195,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return nombre+apellido;
+  return nombre+' '+apellido;
 }
 
 function obtenerSaludo(nombre) {
@@ -216,7 +216,7 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  var perimetro=lado*lado;
+  var perimetro=4*lado;
   return perimetro;
 }
 
@@ -249,7 +249,7 @@ function esVocal(letra){
     if(letra=='a'||'e'||'i'||'o'||'u'){
     return 'Es vocal';
     }
-    else{
+    else if(letra!='a'||'e'||'i'||'o'||'u'){
       return 'Dato incorrecto';
     }
   }
