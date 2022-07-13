@@ -195,14 +195,14 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  console.log(nombre+ apellido)
+  return nombre+apellido;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  console.log('Hola '+nombre+'!')
+  return'Hola '+nombre+'!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -217,7 +217,7 @@ function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
   var perimetro=lado*lado;
-  return lado;
+  return perimetro;
 }
 
 
@@ -247,7 +247,7 @@ function esVocal(letra){
   var longitud=letra.length;
   if(longitud==1){
     if(letra=='a'||'e'||'i'||'o'||'u'){
-    return 'Es una vocal';
+    return 'Es vocal';
     }
     else{
       return 'Dato incorrecto';
